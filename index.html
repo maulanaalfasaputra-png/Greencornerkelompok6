@@ -4,330 +4,144 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Dokumentasi kegiatan Green Corner Kelompok 6 X-TE2 SMKN 2 Purwokerto.">
-<title>Green Corner | Kelompok 6</title>
+<title>Green Corner Kelompok 3</title>
 
 <style>
-:root {
-  --green:#245b3d;
-  --deep:#173d2b;
-  --mint:#e8f2e8;
-  --cream:#fbfaf4;
-  --leaf:#75a96b;
-  --ink:#23352a;
-}
-
 * {
-  box-sizing:border-box;
-  scroll-behavior:smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin:0;
-  font-family:Arial,Helvetica,sans-serif;
-  background:var(--cream);
-  color:var(--ink);
-  line-height:1.65;
+    font-family: Arial, sans-serif;
+    background: #f4f8f4;
+    color: #26382c;
 }
 
 header {
-  background:linear-gradient(120deg,#173d2b,#397b50);
-  color:white;
-  padding:18px 7%;
-  position:sticky;
-  top:0;
-  z-index:5;
-  box-shadow:0 3px 14px #163b2b30;
+    background: linear-gradient(135deg, #14532d, #16a34a);
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    line-height: 1.6;
 }
 
 nav {
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-  flex-wrap:wrap;
-}
-
-.brand {
-  font-weight:800;
-  font-size:1.15rem;
-  letter-spacing:.4px;
-}
-
-nav ul {
-  display:flex;
-  gap:18px;
-  list-style:none;
-  padding:0;
-  margin:0;
-  flex-wrap:wrap;
+    background: #166534;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
 }
 
 nav a {
-  color:white;
-  text-decoration:none;
-  font-size:.92rem;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
 }
 
 nav a:hover {
-  text-decoration:underline;
+    background: #22c55e;
 }
 
 .hero {
-  padding:90px 7% 85px;
-  background:linear-gradient(90deg,#143b2bdc,#143b2b65),url('penanaman-2.jpg') center 48%/cover;
-  color:white;
+    padding: 50px 20px;
+    text-align: center;
+    background: #dcfce7;
 }
 
-.hero-inner {
-  max-width:850px;
-}
-
-.eyebrow {
-  text-transform:uppercase;
-  letter-spacing:2px;
-  font-size:.8rem;
-  color:#d7edce;
-  font-weight:bold;
-}
-
-h1 {
-  font-size:clamp(2.5rem,7vw,5rem);
-  line-height:1.05;
-  margin:12px 0;
+.hero h2 {
+    color: #166534;
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 .hero p {
-  font-size:1.1rem;
-  max-width:650px;
-}
-
-.btn {
-  display:inline-block;
-  background:#d9edce;
-  color:#1b4b30;
-  padding:11px 20px;
-  border-radius:30px;
-  text-decoration:none;
-  font-weight:bold;
-  margin-top:12px;
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
 }
 
 section {
-  padding:65px 7%;
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
 }
 
-.section-title {
-  text-align:center;
-  margin:0 auto 35px;
-  max-width:700px;
+section h2 {
+    text-align: center;
+    color: #166534;
+    margin-bottom: 25px;
 }
 
-.section-title h2 {
-  font-size:2rem;
-  color:var(--green);
-  margin:0 0 8px;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
-.section-title p {
-  margin:0;
-  color:#607166;
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: #15803d;
+    margin-bottom: 12px;
+}
+
+.card p {
+    line-height: 1.7;
+}
+
+.photo-box {
+    background: #e5e7eb;
+    min-height: 180px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #64748b;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+.photo-box img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .about {
-  background:var(--mint);
-}
-
-.about-grid {
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:30px;
-  align-items:center;
-  max-width:1100px;
-  margin:auto;
-}
-
-.about-card,.info-card {
-  background:white;
-  padding:26px;
-  border-radius:18px;
-  box-shadow:0 8px 24px #173d2b10;
-}
-
-.about-card h3 {
-  color:var(--green);
-  margin-top:0;
-}
-
-.facts {
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:12px;
-}
-
-.fact {
-  background:#f5f8f1;
-  border-radius:14px;
-  padding:18px;
-}
-
-.fact strong {
-  display:block;
-  color:var(--green);
-  font-size:1.15rem;
-}
-
-.members {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
-  max-width:1000px;
-  margin:auto;
-}
-
-.member {
-  background:white;
-  border:1px solid #e3eadf;
-  border-radius:15px;
-  padding:19px;
-  text-align:center;
-}
-
-.number {
-  width:38px;
-  height:38px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  background:var(--mint);
-  color:var(--green);
-  font-weight:bold;
-  margin:0 auto 9px;
-}
-
-.member h3 {
-  font-size:1rem;
-  margin:4px 0;
-}
-
-.member p {
-  margin:0;
-  color:#6b796e;
-  font-size:.9rem;
-}
-
-.plants {
-  background:var(--mint);
-}
-
-.plant-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-  max-width:1000px;
-  margin:auto;
-}
-
-.plant {
-  background:white;
-  padding:23px;
-  border-radius:16px;
-}
-
-.plant h3 {
-  color:var(--green);
-  margin-top:0;
-}
-
-.gallery {
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:18px;
-  max-width:1000px;
-  margin:auto;
-}
-
-.photo {
-  margin:0;
-  background:white;
-  padding:10px;
-  border-radius:16px;
-  box-shadow:0 8px 24px #173d2b12;
-}
-
-.photo img {
-  display:block;
-  width:100%;
-  height:360px;
-  object-fit:cover;
-  border-radius:10px;
-}
-
-.photo figcaption {
-  padding:12px 8px 5px;
-  font-size:.94rem;
-}
-
-.closing {
-  background:linear-gradient(120deg,#173d2b,#397b50);
-  color:white;
-  text-align:center;
-}
-
-.closing h2 {
-  font-size:2rem;
-  margin-top:0;
+    background: #dcfce7;
+    border-radius: 15px;
+    line-height: 1.8;
+    text-align: center;
 }
 
 footer {
-  background:#102e20;
-  color:#d9e8dc;
-  text-align:center;
-  padding:22px 7%;
-  font-size:.9rem;
-}
-
-@media(max-width:760px) {
-  header {
-    position:static;
-  }
-  nav {
-    align-items:flex-start;
-  }
-  nav ul {
-    gap:11px;
-  }
-  .about-grid {
-    grid-template-columns:1fr;
-  }
-  .members {
-    grid-template-columns:repeat(2,1fr);
-  }
-  .plant-grid {
-    grid-template-columns:1fr;
-  }
-  .gallery {
-    grid-template-columns:1fr;
-  }
-  .photo img {
-    height:auto;
-    max-height:520px;
-  }
-  section {
-    padding:48px 6%;
-  }
-  .hero {
-    padding:70px 6%;
-  }
-}
-
-@media(max-width:420px) {
-  .members {
-    grid-template-columns:1fr;
-  }
-  nav ul {
-    font-size:.85rem;
-  }
+    background: #14532d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
 }
 </style>
 </head>
@@ -335,135 +149,129 @@ footer {
 <body>
 
 <header>
-<nav>
-  <div class="brand">🌿 GREEN CORNER · KELOMPOK 6</div>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#tentang">Tentang</a></li>
-    <li><a href="#anggota">Anggota</a></li>
-    <li><a href="#tanaman">Tanaman</a></li>
-    <li><a href="#dokumentasi">Dokumentasi</a></li>
-    <li><a href="#penutup">Penutup</a></li>
-  </ul>
-</nav>
+    <h1>🌱 GREEN CORNER</h1>
+    <p>Kelompok 3 | Kelas X-TE2</p>
+    <p>SMK Negeri 2 Purwokerto</p>
 </header>
 
-<main>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#tanaman">Tanaman</a>
+    <a href="#dokumentasi">Dokumentasi</a>
+    <a href="#anggota">Anggota</a>
+</nav>
 
-<section class="hero" id="home">
-  <div class="hero-inner">
-    <div class="eyebrow">Proyek kepedulian lingkungan · X-TE2</div>
-    <h1>Green Corner<br>Kelompok 6</h1>
-    <p>Mewujudkan lingkungan yang lebih hijau melalui kegiatan menanam, merawat, dan menjaga tanaman bersama.</p>
-    <a class="btn" href="#dokumentasi">Lihat Dokumentasi</a>
-  </div>
-</section>
+<div class="hero" id="home">
+    <h2>Selamat Datang di Green Corner!</h2>
+    <p>
+        Green Corner merupakan proyek kolaboratif yang menggabungkan
+        IPAS, Matematika, Bahasa Inggris, dan Informatika.
+        Kami berusaha menciptakan lingkungan sekolah yang hijau,
+        sehat, indah, dan berkelanjutan melalui kegiatan menanam
+        serta merawat tanaman.
+    </p>
+</div>
 
-<section class="about" id="tentang">
-  <div class="section-title">
-    <h2>Tentang Green Corner</h2>
-    <p>Belajar peduli lingkungan melalui tindakan sederhana.</p>
-  </div>
+<section id="tanaman">
+    <h2>🌿 Tanaman Green Corner</h2>
 
-  <div class="about-grid">
-    <div class="about-card">
-      <h3>Awal dari lingkungan yang lebih hijau</h3>
-      <p>Green Corner merupakan kegiatan kelompok untuk menanam dan merawat tanaman di lingkungan sekolah. Melalui kegiatan ini, kami belajar bekerja sama, bertanggung jawab, dan menjaga lingkungan agar tetap bersih serta asri.</p>
-      <p>Setiap anggota ikut berpartisipasi dalam menyiapkan media tanam, memindahkan bibit ke pot, dan merawat tanaman.</p>
+    <div class="cards">
+
+        <div class="card">
+            <div class="photo-box">Foto tanaman cabai</div>
+            <h3>🌶️ Tanaman Cabai</h3>
+            <p>
+                Cabai merupakan tanaman yang menghasilkan buah
+                dengan rasa pedas. Cabai membutuhkan sinar matahari,
+                air, dan tanah yang subur untuk tumbuh.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="photo-box">Foto tanaman bawang putih</div>
+            <h3>🧄 Bawang Putih</h3>
+            <p>
+                Bawang putih merupakan tanaman umbi yang digunakan
+                sebagai bumbu masakan. Tanaman ini membutuhkan
+                media tanam yang baik dan perawatan teratur.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="photo-box">Foto tanaman tomat</div>
+            <h3>🍅 Tanaman Tomat</h3>
+            <p>
+                Tomat merupakan tanaman yang menghasilkan buah
+                dan kaya akan nutrisi. Tomat membutuhkan cahaya
+                matahari, air, dan pemeliharaan yang baik.
+            </p>
+        </div>
+
     </div>
-
-    <div class="facts">
-      <div class="fact"><strong>Kelompok 6</strong><span>Nama kelompok</span></div>
-      <div class="fact"><strong>X-TE2</strong><span>Kelas</span></div>
-      <div class="fact"><strong>SMKN 2</strong><span>Purwokerto</span></div>
-      <div class="fact"><strong>Menanam & merawat</strong><span>Kegiatan utama</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="anggota">
-  <div class="section-title">
-    <h2>Anggota Kelompok</h2>
-    <p>Enam anggota yang bekerja sama dalam kegiatan Green Corner.</p>
-  </div>
-
-  <div class="members">
-    <article class="member"><div class="number">02</div><h3>Hikmal Dithia S</h3><p>Nomor absen 02</p></article>
-    <article class="member"><div class="number">09</div><h3>Maulana Alfa Saputra</h3><p>Nomor absen 09</p></article>
-    <article class="member"><div class="number">10</div><h3>Maulana Rangga P</h3><p>Nomor absen 10</p></article>
-    <article class="member"><div class="number">12</div><h3>M. Azka Rafa A</h3><p>Nomor absen 12</p></article>
-    <article class="member"><div class="number">18</div><h3>M. Rasyid R.H</h3><p>Nomor absen 18</p></article>
-    <article class="member"><div class="number">22</div><h3>Nizam Amani</h3><p>Nomor absen 22</p></article>
-  </div>
-</section>
-
-<section class="plants" id="tanaman">
-  <div class="section-title">
-    <h2>Tanaman Green Corner</h2>
-    <p>Tanaman yang menjadi bagian dari kegiatan kelompok.</p>
-  </div>
-
-  <div class="plant-grid">
-    <article class="plant">
-      <h3>🌶️ Cabai</h3>
-      <p>Tanaman cabai ditanam dalam media tanam yang cukup gembur dan dirawat dengan penyiraman teratur.</p>
-    </article>
-
-    <article class="plant">
-      <h3>🍅 Tomat</h3>
-      <p>Tanaman tomat membutuhkan sinar matahari dan perawatan rutin agar dapat tumbuh dengan baik.</p>
-    </article>
-
-    <article class="plant">
-      <h3>🧄 Bawang Putih</h3>
-      <p>Bawang putih menjadi salah satu tanaman yang dikenalkan dalam kegiatan penanaman dan perawatan.</p>
-    </article>
-  </div>
 </section>
 
 <section id="dokumentasi">
-  <div class="section-title">
-    <h2>Dokumentasi Kegiatan</h2>
-    <p>Beberapa momen saat kelompok menyiapkan media tanam dan menanam bibit.</p>
-  </div>
+    <h2>📸 Dokumentasi Kegiatan</h2>
 
-  <div class="gallery">
+    <div class="cards">
 
-    <figure class="photo">
-      <img src="penanaman-1.jpg" alt="Anggota kelompok menyiapkan bibit untuk ditanam">
-      <figcaption>Menyiapkan bibit dan media tanam sebelum dipindahkan ke pot.</figcaption>
-    </figure>
+        <div class="card">
+            <div class="photo-box">
+                Foto kegiatan 1
+            </div>
+            <p>Persiapan media tanam.</p>
+        </div>
 
-    <figure class="photo">
-      <img src="penanaman-2.jpg" alt="Anggota kelompok bekerja bersama menanam bibit">
-      <figcaption>Bekerja sama memindahkan bibit ke dalam wadah tanam.</figcaption>
-    </figure>
+        <div class="card">
+            <div class="photo-box">
+                Foto kegiatan 2
+            </div>
+            <p>Proses penanaman tanaman.</p>
+        </div>
 
-    <figure class="photo">
-      <img src="penanaman-3.jpg" alt="Anggota kelompok menanam tanaman di pot">
-      <figcaption>Menanam dan merapikan tanah di sekitar bibit.</figcaption>
-    </figure>
+        <div class="card">
+            <div class="photo-box">
+                Foto kegiatan 3
+            </div>
+            <p>Perawatan dan penyiraman tanaman.</p>
+        </div>
 
-    <figure class="photo">
-      <img src="perawatan-tanaman.jpg" alt="Anggota kelompok merawat tanaman dalam pot">
-      <figcaption>Merawat tanaman yang sudah ditanam agar dapat tumbuh dengan baik.</figcaption>
-    </figure>
-
-  </div>
+    </div>
 </section>
 
-<section class="closing" id="penutup">
-  <h2>Penutup</h2>
-  <p>Melalui kegiatan Green Corner, kami belajar bahwa menjaga lingkungan dapat dimulai dari hal kecil. Dengan kerja sama dan tanggung jawab, kami berharap tanaman yang telah ditanam dapat tumbuh dengan baik dan membuat lingkungan sekolah menjadi lebih hijau, bersih, serta nyaman.</p>
-  <p><strong>Kelompok 6 · X-TE2 · SMKN 2 Purwokerto</strong></p>
-</section>
+<section id="anggota">
+    <h2>👥 Anggota Kelompok 3</h2>
 
-</main>
+    <div class="cards">
+
+        <div class="card">
+            <h3>Anggota Kelompok</h3>
+            <p>1. Hikmal Dithia S.</p>
+            <p>2. Maulana Alfa Saputra</p>
+            <p>3. Maulana Rangga P.</p>
+            <p>4. M. Azka</p>
+            <p>5. M. Razyid</p>
+            <p>6. Nizam</p>
+        </div>
+
+        <div class="card about">
+            <h3>Tujuan Green Corner</h3>
+            <p>
+                Meningkatkan kepedulian terhadap lingkungan,
+                mempelajari pertumbuhan tanaman, melatih kerja sama,
+                serta memanfaatkan teknologi untuk mendokumentasikan
+                dan mempublikasikan kegiatan sekolah.
+            </p>
+        </div>
+
+    </div>
+</section>
 
 <footer>
-© 2026 Green Corner Kelompok 6 · X-TE2 SMKN 2 Purwokerto
+    <p><b>GREEN CORNER KELOMPOK 3</b></p>
+    <p>X-TE2 | SMK Negeri 2 Purwokerto</p>
+    <p>Small green actions create a big environmental impact.</p>
 </footer>
 
 </body>
-  </html>
-  
+</html>
